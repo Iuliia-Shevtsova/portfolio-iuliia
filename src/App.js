@@ -3,6 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Particles from 'react-particles-js'
 import Navbar from './components/Navbar';
 import Header from './components/Header'
+import About from './components/About'
+import Skills from './components/Skills'
+import Experience from './components/Experience'
+import Portfolio from './components/Portfolio'
+import Contacts from './components/Contacts'
 
 
 function App() {
@@ -91,6 +96,11 @@ function App() {
       }} /> */}
       <Navbar />
       <Header />
+      <About />
+      <Skills />
+      <Experience />
+      <Portfolio />
+      <Contacts />
     </>
   );
 }
