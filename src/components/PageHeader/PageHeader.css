@@ -1,0 +1,20 @@
+.header-container {
+  display:flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  
+}
+
+.header-container hr {
+  position: absolute;
+  left: 0;
+  width: 140px;
+  border: 1px solid #ef4035;
+}
+
+.header-container h1 {
+  color: white;
+}

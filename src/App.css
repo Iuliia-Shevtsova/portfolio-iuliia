@@ -9,7 +9,8 @@
   /* --primary-dark: rgba(255, 255, 255, 0); */
   --primary-dark: #012b4d;
   --primary-red: #ef4035;
-  --primary-hover-red: #f33501;
+  /* --primary-hover-red: #d34949; */
+  --primary-hover-red: rgba(255, 43, 43, 0.37);;
 }
 
 

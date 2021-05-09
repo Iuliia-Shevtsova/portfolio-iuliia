@@ -1,0 +1,42 @@
+.about-wrapper {
+  background-color: #012b4d;
+  /* margin-bottom: 50px; */
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.about-wrapper .about-container .photo .me{
+  height: 300px;
+  border-radius: 5px;;
+}
+
+.about-wrapper .about-container .photo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-wrapper .about-container {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  width:60%;
+  text-align: justify;
+  margin-right: 50px;
+  padding-left: 50px;
+}
+
+.text h2, p {
+  color: white;
+}
+
+.text h2 {
+  font-weight: 800;
+}
+
+.img_about {
+  width: 300px;
+  box-shadow: inset 0px 0px 10px 10px red ;
+}
