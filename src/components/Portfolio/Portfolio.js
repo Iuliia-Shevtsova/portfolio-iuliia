@@ -12,14 +12,18 @@ const Portfolio = ({projectData}) => {
       <div className="portfolio">
         {
           projectData.map((project)=>{
-            return <div className="project" key={project.fields.id}>
-              <div className="project-content">
-                <img src={project.fields.image[0].url} alt=""/>
-                <a href={project.fields.link} className="project-link">
-                  {project.fields.Name}
-                </a>
-              </div>
-            </div>
+            if (project.fields.Name !== undefined ){
+              return (
+                <div className="project" key={project.fields.id}>
+                  <div className="project-content">
+                    <img src={project.fields.image[0].url} alt=""/>
+                    <a href={project.fields.link} className="project-link">
+                      {project.fields.Name}
+                    </a>
+                  </div>
+                </div>
+              )
+            }
           })
         }
       </div>

@@ -37,6 +37,7 @@ function App() {
       // );
       // setProjectData(response.data.records);
       // console.log(response.data.records)
+      
     } catch (err) {
       setError(err);
     }
@@ -45,14 +46,35 @@ function App() {
 
   console.log(projectData)
 
+
+  // const getResults = async () => {
+  //   setLoading(true);
+  //   try {
+  //     const [response1, response2] = await Promise.all([
+  //       fetch('https://api.airtable.com/v0/appxHbAmWEaapw9Gf/Table%201?api_key=keyHoZe6iixLcTeeA'),
+  //       fetch('https://api.airtable.com/v0/appZlpJsjUfVtZsV9/Table%201?api_key=keyHoZe6iixLcTeeA'),
+  //     ]);
+  //     const data1 = await response1.json();
+  //     const data2 = await response2.json();
+  //     setProjectData(data1.records);
+  //     setIcons(data2.records)
+  //     console.log(data1.records)
+  //     console.log(data2.records)
+      
+  //   } catch (err) {
+  //     setError(err);
+  //   }
+  //   setLoading(false);
+  // };
+
   return (
     <>
       <ParticlesStyle />
       <Navbar />
       <Header />
       <About />
-      <Skills />
-      <Experience />
+      <Skills  projectData={projectData}/>
+      {/* <Experience/> */}
       <Portfolio projectData={projectData} />
       <Contacts />
       {/* {loading ? (<div></div>) : (<div></div>) } */}

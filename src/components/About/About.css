@@ -18,13 +18,14 @@
 
 .about-wrapper .about-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .text {
-  width:60%;
+  width:50%;
   text-align: justify;
-  margin-right: 50px;
+  /* margin-right: 50px; */
+  margin-left: 70px;
   padding-left: 50px;
 }
 

@@ -1,27 +1,24 @@
 .portfolio-page {
   background-color: rgb(1, 43, 77);
-  
   padding-top: 30px;
   padding-bottom: 50px;
-    padding: 5em;
-    color: white;
+  padding: 5em;
+  color: white;
 }
 
 .portfolio{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2.5rem;
-  @media screen and (max-width: 1080px){
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 2rem;
-  }
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
 }
 
 .portfolio .project{
-  background-color:#161925;
-  width: 100%;
+  /* background:linear-gradient(#e66465, #9198e5); */
+  background:linear-gradient(#1a7297, #195fafa4, #e66465);
+  width: 90%;
   padding: 1rem;
   overflow: hidden;
+  border-radius: 10px;
 }
 .portfolio .project.project-content{
   overflow: hidden;
@@ -46,8 +43,35 @@
     
 }
 .project-content .project-link{
-  color: #ac58bd;
+  /* color: #ac58bd; */
+  color: #fff;
+  font-weight: 600;
 }
 .title{
   margin-bottom: 4rem;
+}
+
+@media(max-width: 1080px){
+  .portfolio{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+  }
+}
+
+@media(max-width: 1200px){
+  .portfolio{
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+}
+
+@media(max-width: 768px) {
+  .portfolio{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+  }
+
+  .portfolio .project{
+    width: 100%;
+  }
 }

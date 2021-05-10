@@ -1,0 +1,20 @@
+.contact-page {
+  background-color: rgb(1, 43, 77);
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding: 5em;
+  color: white;
+  display: flex;
+  justify-content: center!important;
+}
+
+.contacts{
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contacts i{
+  margin-right: 2rem;
+}
