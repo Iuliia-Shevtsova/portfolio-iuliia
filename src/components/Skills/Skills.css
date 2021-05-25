@@ -20,6 +20,17 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem; 
+}
+
+.skills h1{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  padding-top: 1.5rem;
+  color: #37a6d69d;
 }
 
 .icon-box{
@@ -29,7 +40,7 @@
   height: 6em;
   border-radius: 15px;
   background-color: #61b1d49d;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
   display: flex;
   transform: rotate(45deg);
 }
@@ -49,4 +60,5 @@
   flex: 1 0 0px;
   height: 70%;
   max-width: 70%;
+  filter: brightness(0) invert(1);
 }

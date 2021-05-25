@@ -17,6 +17,7 @@ const Skills = ({projectData}) => {
                       <img src={icon.fields.iconURL[0].url} alt={icon.fields.icon}></img>
                     </div>
                   </div>
+                  <h1>{icon.fields.icon}</h1>
                 </div>
                 )
             })
