@@ -3,7 +3,6 @@
   padding-top: 30px;
   padding-bottom: 50px;
   padding: 5em;
-  color: white;
   display: flex;
   justify-content: center!important;
 }
@@ -17,4 +16,5 @@
 
 .contacts i{
   margin-right: 2rem;
+  color: white;
 }
