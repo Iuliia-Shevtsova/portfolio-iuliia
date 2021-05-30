@@ -1,0 +1,98 @@
+.about-wrapper {
+  background-color: rgb(1, 43, 77);
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding: 5em;
+  color: white;
+}
+
+.about-wrapper .about-container .photo .me{
+  height: 300px;
+  border-radius: 5px;;
+}
+
+.about-wrapper .about-container .photo {
+  flex: 1;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-wrapper .about-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.text {
+  width:50%;
+  text-align: justify;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  flex: 1;
+}
+
+.text h2, p {
+  margin-top: 3rem;
+  color: white;
+}
+
+.text p {
+  font-size: 1.3rem;
+}
+
+.text h2 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+@media(max-width: 576px) {
+  .about-wrapper .about-container {
+    flex-direction: column;
+  }
+  .text {
+    width:80%;
+    margin-bottom: 3rem;
+  }
+  .about-wrapper .about-container .photo .me{
+    height: 300px;
+  }
+  .text h2 {
+    font-size: 1.5rem;
+  }
+  .text p {
+    font-size: 1.2rem;
+  }
+}
+
+@media(max-width: 768px) {
+  .about-wrapper .about-container {
+    flex-direction: column;
+  }
+  .text {
+    width:80%;
+    margin-bottom: 3rem;
+  }
+  .about-wrapper .about-container .photo .me{
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .text {
+    width:80%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .about-wrapper .about-container .photo .me{
+    height: 250px;
+  }
+  .text h2 {
+    font-size: 1.5rem;
+  }
+  .text p {
+    font-size: 1.2rem;
+  }
+}

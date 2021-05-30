@@ -4,12 +4,10 @@
 
 :root {
   --primary-white: #fff;
-  /* --primary-orange: #f9ab00; */
   --primary-orange: #f9ab00;
-  /* --primary-dark: rgba(255, 255, 255, 0); */
   --primary-dark: #012b4d;
   --primary-red: #ef4035;
-  --primary-hover-red: #f33501;
+  --primary-hover-red: rgba(255, 43, 43, 0.37);;
 }
 
 
@@ -21,25 +19,20 @@ nav {
   z-index: 2;
 }
 
-/* .logo {
-  width: 16.25rem;
-} */
-
 a.logo h1{
   font-family: 'Poiret One', cursive;
-  /* font-family: 'Orbitron', sans-serif; */
   color: var(--primary-red);
-  /* color: rgb(191, 143, 197); */
   font-size: 2rem;
   font-weight: bold;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
 }
 /* NAV LONKS */
 .navbar-nav {
   background-color: #012b4d;
 }
 
+.navbar {
+  background-color: #012b4d;
+}
 nav a.nav-link {
   font-size: .8rem;
   letter-spacing: 0.0375rem;
@@ -63,22 +56,19 @@ nav ul li {
 
 .navbar-brand {
   max-width: 17.25rem;
-  /* padding: 0 !important;
-  height: 6rem !important; */
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
-  border-top: 0.1875rem solid var(--primary-orange);
+  border-top: 0.1875rem solid var(--primary-hover-red);
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid var(--primary-orange);
+  border-top: 0.1875rem solid var(--primary-hover-red);
 }
 
 /********* HEADER ****************/
 .header-wraper {
   position: relative;
-  /* background: linear-gradient(to top, rgba(55, 15, 63, 0.7), rgba(90, 24, 104, 0.7)), url('placeimg.jpg') no-repeat; */
   background: linear-gradient(to top, rgba(27, 27, 44, 0.7), rgba(3, 3, 29, 0.7)), url('placeimg.jpg') no-repeat;
   background-size: cover;
   background-position: center;
@@ -101,7 +91,6 @@ nav ul li {
 
 .main-info h1 {
   color: var(--primary-red);
-  /* color: rgb(85, 75, 231); */
   text-transform: uppercase;
 }
 

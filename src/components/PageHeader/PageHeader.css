@@ -1,0 +1,42 @@
+.header-container {
+  display:flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.25rem;
+  margin-bottom: 3.25rem;
+}
+
+.header-container h1::before,
+.section-headling h1::after{
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(209, 72, 72, 0.75);
+}
+
+.header-container h1::before{
+  width: 10rem;
+  height: 3px;
+  border-radius: .8rem;
+}
+
+.header-container h1::after{
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  bottom: -1rem;
+}
+
+.header-container h1 {
+  color: #ef4035;
+  font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+  .header-container h1 {
+    font-size: 2rem;
+  }
+}
