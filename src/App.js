@@ -7,8 +7,9 @@ import Navbar from './components/Navbar';
 import Header from './components/Header'
 import About from './components/About/About'
 import Skills from './components/Skills/Skills'
-import Experience from './components/Experience/Experience'
-import Portfolio from './components/Portfolio/Portfolio'
+// import Experience from './components/Experience/Experience'
+// import Portfolio from './components/Portfolio/Portfolio'
+import Portfolio from './components/Portfolio/Portfolio3'
 import Contacts from './components/Contacts/Contacts'
 
 
@@ -17,10 +18,15 @@ function App() {
   const [projectData, setProjectData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const isCancelled = React.useRef(false);
 
   useEffect(() => {
     getResults();
-  }, []);
+
+    return () => {
+      isCancelled.current = true;
+    };
+  }, [projectData]);
 
   const getResults = async () => {
     setLoading(true);
@@ -28,8 +34,10 @@ function App() {
       await fetch('https://api.airtable.com/v0/appxHbAmWEaapw9Gf/Table%201?api_key=keyHoZe6iixLcTeeA')
 			.then(res => res.json())
 			.then(res => {
-				console.log(res.records);
-        setProjectData(res.records);
+        if (!isCancelled.current) {
+          console.log(res.records);
+          setProjectData(res.records);
+        }
 			})
       
       // const response = await axios.get(
@@ -69,7 +77,7 @@ function App() {
 
   return (
     <>
-      <ParticlesStyle />
+      {/* <ParticlesStyle /> */}
       <Navbar />
       <Header />
       <About />

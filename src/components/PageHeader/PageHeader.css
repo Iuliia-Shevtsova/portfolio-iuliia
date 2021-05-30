@@ -33,12 +33,11 @@
 
 .header-container h1 {
   color: #ef4035;
-  /* color: #d33751; */
-  /* color: #ce73e0; */
   font-size: 3rem;
-  /* color: rgba(211, 43, 43, 0.87); */
+}
 
-  /* background: -webkit-linear-gradient(rgb(84, 200, 247) 0%, rgb(230, 71, 71)95%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+@media (max-width: 768px) {
+  .header-container h1 {
+    font-size: 2rem;
+  }
 }

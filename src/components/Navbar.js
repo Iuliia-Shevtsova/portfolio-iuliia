@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../logo2.png'
+// import logo from '../logo2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //icon fa-bars for responsive nav
 import { faBars } from '@fortawesome/free-solid-svg-icons'
@@ -25,9 +25,9 @@ const Navbar = () => {
             <li className="nav-item">
               <a className="nav-link" href="/#skills">Skills</a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link" href="/#experience">Experience</a>
-            </li>
+            </li> */}
             <li className="nav-item">
               <a className="nav-link" href="/#portfolio">Portfolio</a>
             </li>

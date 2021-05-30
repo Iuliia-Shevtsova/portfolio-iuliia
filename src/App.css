@@ -33,14 +33,17 @@ a.logo h1{
   /* color: rgb(191, 143, 197); */
   font-size: 2rem;
   font-weight: bold;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  /* padding-top: .5rem;
+  padding-bottom: .5rem; */
 }
 /* NAV LONKS */
 .navbar-nav {
   background-color: #012b4d;
 }
 
+.navbar {
+  background-color: #012b4d;
+}
 nav a.nav-link {
   font-size: .8rem;
   letter-spacing: 0.0375rem;
@@ -69,11 +72,11 @@ nav ul li {
 }
 
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
-  border-top: 0.1875rem solid var(--primary-orange);
+  border-top: 0.1875rem solid var(--primary-hover-red);
 }
 
 .navbar-nav > li > a:hover {
-  border-top: 0.1875rem solid var(--primary-orange);
+  border-top: 0.1875rem solid var(--primary-hover-red);
 }
 
 /********* HEADER ****************/

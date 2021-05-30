@@ -1,8 +1,7 @@
 .contact-page {
   background-color: rgb(1, 43, 77);
   padding-top: 30px;
-  padding-bottom: 50px;
-  padding: 5em;
+  padding-bottom: 30px;
   display: flex;
   justify-content: center!important;
 }
