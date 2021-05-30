@@ -15,7 +15,6 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(209, 72, 72, 0.75);
-  /* background-color: #e6647a; */
 }
 
 .header-container h1::before{

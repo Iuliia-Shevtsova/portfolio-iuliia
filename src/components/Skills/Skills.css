@@ -31,19 +31,13 @@
   font-size: 1rem;
   padding-top: 1.5rem;
   color: #c1d4ddc5;
-  /* color: #c1c5f3bb  */
 }
 
 .icon-box{
-  /* width: 8rem;
-  height: 8rem; */
   width: 6rem;
   height: 6em;
   border-radius: 15px;
-  /* background-color: #61b1d49d; */
-  /* background: linear-gradient(-45deg, rgb(84, 200, 247), rgb(230, 71, 71)); */
   background: linear-gradient(135deg, #e66464bd 0%, #55bae2b0 98%);
-  /* margin-bottom: 3rem; */
   display: flex;
   transform: rotate(45deg);
 }
@@ -68,15 +62,10 @@
 
 @media(max-width: 768px) {
   .icon-box{
-    /* width: 8rem;
-    height: 8rem; */
     width: 5rem;
     height: 5em;
     border-radius: 15px;
-    /* background-color: #61b1d49d; */
-    /* background: linear-gradient(-45deg, rgb(84, 200, 247), rgb(230, 71, 71)); */
     background: linear-gradient(135deg, #e66464bd 0%, #55bae2b0 98%);
-    /* margin-bottom: 3rem; */
     display: flex;
     transform: rotate(45deg);
   }

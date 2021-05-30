@@ -1,5 +1,5 @@
 import React from 'react'
-import './Portfolio3.css'
+import './Portfolio.css'
 
 const Technologies = ({project}) => {
   const technologies = project.technologies.split(','); 

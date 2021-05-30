@@ -6,7 +6,6 @@ const Header = () => {
     <div className="header-wraper">
       <div className="main-info">
       <h1>Frontend and Ruby on Rails Web Development</h1>
-        {/* <h1>web development and websites promotions</h1> */}
         <Typed 
           className="typed-text"
           strings={["React development", "Ruby on Rails development"]}

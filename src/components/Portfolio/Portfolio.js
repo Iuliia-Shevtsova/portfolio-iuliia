@@ -1,25 +1,34 @@
 import React from 'react'
 import './Portfolio.css'
-import PageHeader from './../PageHeader/PageHeader'
+import PageHeader from '../PageHeader/PageHeader'
+import Technologies from './Technologies'
 
 const Portfolio = ({projectData}) => {
   return (
-    <div className='portfolio-page' id='portfolio'>
-    {/* <div className="PortfolioPage"> */}
-      <div className="title">
-          <PageHeader title={'Portfolio'} />
-      </div>
-      <div className="portfolio">
+    <div className='portfolio' id='portfolio'>
+        <PageHeader title={'Portfolio'} />
+      <div className="container">
         {
-          projectData.map((project)=>{
+          projectData.map((project, index)=>{
             if (project.fields.Name !== undefined ){
               return (
-                <div className="project" key={project.fields.id}>
-                  <div className="project-content">
+                <div className="portfolio-item" key={index}>
+                  <div className="portfolio-img">
                     <img src={project.fields.image[0].url} alt=""/>
-                    <a href={project.fields.link} className="project-link">
-                      {project.fields.Name}
-                    </a>
+                  </div>
+
+                  <div className="portfolio-description">
+                    <h3>{project.fields.Name}</h3>
+                    <p>{project.fields.Notes}</p>
+                    <Technologies project={project.fields}/>
+                    <div className="links">
+                      <a href={project.fields.link} target="_blank" rel="noopener noreferrer">
+                        <i className="fa fa-github" aria-hidden="true"></i>
+                      </a>
+                      <a href={project.fields.link} target="_blank" rel="noopener noreferrer">
+                        <i className="fa fa-external-link" aria-hidden="true"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               )
