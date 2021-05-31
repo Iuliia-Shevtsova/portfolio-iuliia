@@ -17,8 +17,8 @@ const About = () => {
             Hi, I'm Iuliia Shevtsova
           </h2>
           <p>
-            I love to create awesome user websites and transform ideas into reality using 
-            JavaScript, HTML5, CSS3, ReactJS on Front End and Ruby on Rails.
+            I love to create awesome websites and transform ideas into reality using 
+            ReactJS and Ruby on Rails.
           </p>
         </div>
         <div className='photo'>
